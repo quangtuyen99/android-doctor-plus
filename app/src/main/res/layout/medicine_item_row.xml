@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_marginTop="@dimen/margin_normal"
+    android:layout_marginBottom="@dimen/margin_normal"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:id="@+id/layoutMedicine"
+    android:padding="@dimen/padding_normal"
+    android:background="@drawable/bg_category_shadow">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:src="@drawable/logo"
+        android:layout_width="170dp"
+        android:layout_height="170dp"/>
+
+    <LinearLayout
+        android:padding="@dimen/padding_normal"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:text="Panadol"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@color/colorMedicineName"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Loại thuốc: "
+                android:textStyle="bold"
+                android:textColor="@color/colorTabSelected"
+                android:textSize="@dimen/text_size_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvCategory"
+                android:text="TP chức năng"
+                android:textSize="@dimen/text_size_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Công dụng: "
+                android:textStyle="bold"
+                android:textColor="@color/colorTabSelected"
+                android:textSize="@dimen/text_size_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvUses"
+                android:text="điều trị chứng ho khan"
+                android:textSize="@dimen/text_size_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

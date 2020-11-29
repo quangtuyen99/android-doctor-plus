@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Hospital.HospitalActivity">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_big"
+        android:background="@color/colorToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_gravity="start"
+            android:src="@drawable/ic_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:tint="@color/colorTabSelected"/>
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Thông tin bệnh viện"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorTabSelected"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/txtSearch"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_search"
+        android:layout_marginLeft="@dimen/margin_big"
+        android:layout_marginRight="@dimen/margin_big"
+        android:padding="@dimen/padding_normal"
+        android:hint="Tên bệnh viện, địa chỉ,..."
+        android:drawablePadding="@dimen/padding_normal"
+        android:drawableEnd="@drawable/ic_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvHospital"
+        android:layout_margin="@dimen/margin_normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

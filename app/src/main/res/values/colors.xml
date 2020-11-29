@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorDarkerGray">#ACA5A5</color>
+    <color name="colorToolbar">#C9FEEA</color>
+    <color name="colorTabSelected">#117750</color>
+    <color name="colorDivider">#BDBDBD</color>
+    <color name="colorDarkGray">#756C6C</color>
+    <color name="colorHeader">#097A4F</color>
+    <color name="colorMedicineName">#0B675E</color>
+    <color name="colorBackgroundReminder">#20BA98</color>
+    <color name="colorTextReminder">#109E7E</color>
+    <color name="colorLayerDoctor">#BDB4B4</color>
+
+    <color name="colorDoctor">#52EDCB</color>
+</resources>

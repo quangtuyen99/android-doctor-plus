@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserActivity"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_big"
+        android:background="@color/colorToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_gravity="start"
+            android:src="@drawable/ic_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:tint="@color/colorTabSelected"/>
+        <TextView
+            android:textColor="@color/colorTabSelected"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="@string/info_user"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp">
+
+            <LinearLayout
+                android:id="@+id/layoutUserName"
+                android:background="@drawable/bg_input"
+                android:orientation="horizontal"
+                android:layout_marginTop="40dp"
+                android:gravity="center_horizontal"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/ic_account"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:tint="@color/colorAccent"
+                    />
+
+                <EditText
+                    android:id="@+id/txtUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:focusable="false"
+                    android:background="@null"
+                    android:imeOptions="actionNext"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:paddingStart="@dimen/padding_normal"
+                    android:paddingEnd="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp"
+                    tools:ignore="Deprecated" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="41dp"
+                android:background="@color/colorWhite"
+                android:paddingEnd="6dp"
+                android:paddingStart="6dp"
+                android:text="@string/userName"
+                android:textAllCaps="true"
+                android:textColor="@color/colorDarkGray"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/layoutUserName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/layoutUserName"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp">
+
+            <LinearLayout
+                android:id="@+id/layoutPhoneNumber"
+                android:background="@drawable/bg_input"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:gravity="center_horizontal"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/ic_phone"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:tint="@color/colorAccent"
+                    />
+
+                <EditText
+                    android:id="@+id/txtPhoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:focusable="false"
+                    android:background="@null"
+                    android:imeOptions="actionNext"
+                    android:importantForAutofill="no"
+                    android:inputType="phone"
+                    android:paddingStart="@dimen/padding_normal"
+                    android:paddingEnd="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp"
+                    tools:ignore="Deprecated" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="41dp"
+                android:background="@color/colorWhite"
+                android:paddingEnd="6dp"
+                android:paddingStart="6dp"
+                android:text="@string/phoneNumber"
+                android:textAllCaps="true"
+                android:textColor="@color/colorDarkGray"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/layoutPhoneNumber"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/layoutPhoneNumber"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp">
+
+            <LinearLayout
+                android:id="@+id/layoutPassword"
+                android:background="@drawable/bg_input"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:gravity="center_horizontal"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/ic_lock"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:tint="@color/colorAccent"
+                    />
+
+                <EditText
+                    android:id="@+id/txtPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:focusable="false"
+                    android:background="@null"
+                    android:imeOptions="actionNext"
+                    android:importantForAutofill="no"
+                    android:inputType="textPassword"
+                    android:paddingStart="@dimen/padding_normal"
+                    android:paddingEnd="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp"
+                    tools:ignore="Deprecated" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="41dp"
+                android:background="@color/colorWhite"
+                android:paddingEnd="6dp"
+                android:paddingStart="6dp"
+                android:text="@string/passWord"
+                android:textAllCaps="true"
+                android:textColor="@color/colorDarkGray"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/layoutPassword"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/layoutPassword"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp">
+
+            <LinearLayout
+                android:id="@+id/layoutName"
+                android:background="@drawable/bg_input"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:gravity="center_horizontal"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/ic_account"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:tint="@color/colorAccent"
+                    />
+
+                <EditText
+                    android:id="@+id/txtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:focusable="false"
+                    android:background="@null"
+                    android:imeOptions="actionNext"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:paddingStart="@dimen/padding_normal"
+                    android:paddingEnd="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp"
+                    tools:ignore="Deprecated" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="41dp"
+                android:background="@color/colorWhite"
+                android:paddingEnd="6dp"
+                android:paddingStart="6dp"
+                android:text="@string/name"
+                android:textAllCaps="true"
+                android:textColor="@color/colorDarkGray"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/layoutName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/layoutName"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp">
+
+            <LinearLayout
+                android:id="@+id/layoutLocation"
+                android:background="@drawable/bg_input"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:gravity="center_horizontal"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/ic_map"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:tint="@color/colorAccent"
+                    />
+
+                <EditText
+                    android:id="@+id/txtCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:focusable="false"
+                    android:background="@null"
+                    android:imeOptions="actionNext"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:paddingStart="@dimen/padding_normal"
+                    android:paddingEnd="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp"
+                    tools:ignore="Deprecated" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="41dp"
+                android:background="@color/colorWhite"
+                android:paddingEnd="6dp"
+                android:paddingStart="6dp"
+                android:text="@string/city"
+                android:textAllCaps="true"
+                android:textColor="@color/colorDarkGray"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/layoutLocation"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/layoutLocation"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_button_save"
+        android:textColor="@color/colorWhite"
+        android:text="@string/update_info"/>
+</LinearLayout>

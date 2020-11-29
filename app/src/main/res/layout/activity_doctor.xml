@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Doctor.DoctorActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_big"
+        android:background="@color/colorToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_gravity="start"
+            android:src="@drawable/ic_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:tint="@color/colorTabSelected"/>
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Bác sĩ"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorTabSelected"/>
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_marginTop="@dimen/margin_big"
+        android:layout_gravity="center"
+        android:src="@drawable/doctor"
+        android:layout_width="70dp"
+        android:layout_height="70dp"/>
+
+
+    <TextView
+        android:text="TÌM KIẾM BÁC SĨ"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/margin_big"
+        android:layout_gravity="center"
+        android:textColor="@color/colorBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/margin_normal"
+        android:textSize="16sp"
+        android:textColor="@color/colorBlack"
+        android:text="Bạn có thể tìm kiếm bác sĩ"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textSize="16sp"
+        android:textColor="@color/colorBlack"
+        android:text="dự vào danh sách sau"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_big"/>
+
+    <LinearLayout
+
+        android:layout_margin="@dimen/margin_normal"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnNhaSi"
+            android:layout_marginLeft="@dimen/margin_big"
+            android:text="Nha Sĩ"
+            android:textAllCaps="false"
+            android:textColor="@color/colorTabSelected"
+            android:background="@drawable/bg_doctor_category"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnYTa"
+            android:layout_marginLeft="42dp"
+            android:text="Y Tá"
+            android:textAllCaps="false"
+            android:textColor="@color/colorTabSelected"
+            android:background="@drawable/bg_doctor_category"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="@dimen/margin_normal"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnThuY"
+            android:layout_marginLeft="@dimen/margin_big"
+            android:text="Thú Y"
+            android:textAllCaps="false"
+            android:textColor="@color/colorTabSelected"
+            android:background="@drawable/bg_doctor_category"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnDaKhoa"
+            android:layout_marginLeft="42dp"
+            android:text="Đa Khoa"
+            android:textAllCaps="false"
+            android:textColor="@color/colorTabSelected"
+            android:background="@drawable/bg_doctor_category"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_margin="@dimen/margin_normal"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnTreEm"
+            android:layout_marginLeft="@dimen/margin_big"
+            android:text="Bác Sĩ Nhi"
+            android:textAllCaps="false"
+            android:textColor="@color/colorTabSelected"
+            android:background="@drawable/bg_doctor_category"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnDaLieu"
+            android:layout_marginLeft="42dp"
+            android:text="Da Liễu"
+            android:textAllCaps="false"
+            android:textColor="@color/colorTabSelected"
+            android:background="@drawable/bg_doctor_category"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</LinearLayout>

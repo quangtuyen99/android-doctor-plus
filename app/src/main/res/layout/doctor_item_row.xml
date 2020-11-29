@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/margin_normal"
+    android:layout_marginBottom="@dimen/margin_normal"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:id="@+id/layoutHospital"
+    android:padding="@dimen/padding_normal"
+    android:background="@drawable/bg_category_shadow">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivDoctor"
+
+            android:background="@drawable/bg_ic_doctor"
+            android:layout_width="70dp"
+            android:layout_height="70dp"/>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvName"
+                android:text="Nguyễn Văn A"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvChucVu"
+                android:text="Thú Y"
+                android:textSize="16sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvDiaChi"
+                android:text="190/5 Linh Trung, Thủ Đức"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <ImageView
+            android:src="@drawable/ic_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/margin_normal"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:id="@+id/tvKinhNghiem"
+            android:text="14"
+            android:textSize="@dimen/text_size_medium"
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginLeft="3dp"
+            android:textSize="@dimen/text_size_medium"
+            android:text="Năm kinh nghiệm"
+            android:textColor="@color/colorBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_marginLeft="40dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_heart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvBook"
+            android:text="122"
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="@color/colorBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:textSize="@dimen/text_size_medium"
+        android:text="Xem thông tin"
+        android:textColor="@color/colorTabSelected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/margin_normal"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnCall"
+            android:text="Gọi"
+            android:textAllCaps="false"
+            android:textColor="@color/colorTextReminder"
+            android:background="@drawable/bg_edit_text"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_marginLeft="25dp"
+            android:text="Đặt lịch"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/bg_button_save"
+            android:textAllCaps="false"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+</LinearLayout>

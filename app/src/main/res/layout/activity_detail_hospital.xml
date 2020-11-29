@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Medicine.DetailMedicineActivity">
+
+    <LinearLayout
+        android:background="@color/colorToolbar"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_margin="@dimen/margin_big"
+            android:src="@drawable/ic_back"
+            app:tint="@color/colorTabSelected"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:textColor="@color/colorTabSelected"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="@string/detail_medicine"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:src="@drawable/logo"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin_big"
+        android:layout_width="150dp"
+        android:layout_height="150dp"/>
+
+
+
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingStart="@dimen/padding_big"
+            android:paddingEnd="@dimen/padding_big"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:textColor="@color/colorMedicineName"
+                android:text="@string/app_name"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_big"/>
+
+            <LinearLayout
+                android:paddingBottom="@dimen/padding_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Địa chỉ: "
+                    android:textStyle="bold"
+                    android:textColor="@color/colorTabSelected"
+                    android:textSize="@dimen/text_size_medicine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvAddress"
+                    android:text="TP chức năng"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_size_medicine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingBottom="@dimen/padding_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Số điện thoại: "
+                    android:textStyle="bold"
+                    android:textColor="@color/colorTabSelected"
+                    android:textSize="@dimen/text_size_medicine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvNumber"
+                    android:text="TP chức năng"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_size_medicine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingBottom="@dimen/padding_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Email: "
+                    android:textStyle="bold"
+                    android:textColor="@color/colorTabSelected"
+                    android:textSize="@dimen/text_size_medicine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvEmail"
+                    android:text="TP chức năng"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_size_medicine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Medicine</string>
+    <string name="login_hello">Chào mừng bạn quay trở lại</string>
+    <string name="login">Đăng nhập để tiếp tục</string>
+    <string name="user">Tên đăng nhập</string>
+    <string name="pass">Mật khẩu</string>
+    <string name="login_text">Đăng nhập</string>
+    <string name="forgotPass">Quên mật khẩu?</string>
+    <string name="signUp1">Bạn là người mới?</string>
+    <string name="signUp">Đăng ký</string>
+    <string name="appName">Doctor Plus</string>
+    <string name="menuSettings">Cài đặt</string>
+    <string name="menuNotification">Thông báo</string>
+    <string name="search">Thay đổi cách bạn tiếp nhận dịch vụ chăm sóc </string>
+    <string name="hint_search">Thông tin thuốc</string>
+    <string name="android_client_id_google">825447782880-1p76q4u2jlrisuhq9kbl4c5g94mr5klr.apps.googleusercontent.com</string>
+    <string name="drawer_open">Mở menu</string>
+    <string name="drawer_close">Đóng menu</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="create_account">Đăng ký</string>
+    <string name="sign_up_continue">Đăng ký để tiếp tục</string>
+    <string name="user_name">Nhập tên tài khoản</string>
+    <string name="userName">Tài khoản</string>
+    <string name="input_password">Nhập mật khẩu</string>
+    <string name="input_phone">Nhập số điện thoại</string>
+    <string name="phoneNumber">Số điện thoại</string>
+    <string name="passWord">Mật Khẩu</string>
+    <string name="input_repassword">Nhập lại mật khẩu</string>
+    <string name="rePassword">Xác nhận mật khẩu</string>
+    <string name="create_account_btn">Tạo tài khoản</string>
+    <string name="alreadyAccount">Bạn đã có tài khoản?</string>
+    <string name="input_name">Nhập tên của bạn</string>
+    <string name="name">Tên</string>
+    <string name="input_city">Nhập thành phố bạn đang ở</string>
+    <string name="city">Thành phố</string>
+    <string name="search_medicine">Tra cứu thông tin thuốc</string>
+    <string name="detail_medicine">Thông tin chi tiết</string>
+    <string name="Reminder">Đặt lời nhắc</string>
+    <string name="drug_name">Tên thuốc</string>
+    <string name="concern">Loại bệnh</string>
+    <string name="Dosage">Liều lượng</string>
+    <string name="hour">Giờ</string>
+    <string name="save">Lưu thông tin</string>
+
+
+    <string-array name="Spinner_items">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string name="google_maps_api">AIzaSyDM-BI8C6na_xntEjSTrEaXATp50MTWg3o</string>
+    <string name="info_user">Thông tin cá nhân</string>
+    <string name="update_info">Thay đổi thông tin</string>
+    <string name="confirm_update">Xác nhận thay đổi</string>
+    <string name="guide">Doctor Plus là ứng dụng được tạo ra để người dùng có thể tra cứu các thông tin y tế như thuốc, bệnh viện hay ghi chú để nhắc nhở uống thuốc.</string>
+</resources>

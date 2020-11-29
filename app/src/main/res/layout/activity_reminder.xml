@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Reminder.ReminderActivity">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_big"
+        android:background="@color/colorToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_gravity="start"
+            android:src="@drawable/ic_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:tint="@color/colorTabSelected"/>
+        <TextView
+            android:textColor="@color/colorTabSelected"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="@string/Reminder"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="@dimen/margin_big"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/margin_big"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/colorTextReminder"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="@string/drug_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/txtName"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_edit_text"
+                android:padding="@dimen/padding_edit_text"
+                android:drawablePadding="@dimen/padding_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/margin_big"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/colorTextReminder"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="@string/concern"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/txtConcern"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_edit_text"
+                android:padding="@dimen/padding_edit_text"
+                android:drawablePadding="@dimen/padding_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/margin_big"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/colorTextReminder"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="@string/Dosage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:padding="@dimen/padding_edit_text"
+                android:background="@drawable/bg_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/Spinner_items"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_marginRight="@dimen/margin_normal"
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginBottom="@dimen/margin_normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="@color/colorTextReminder"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:text="Ngày uống"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:longClickable="false"
+                        android:id="@+id/txtDate"
+                        android:editable="false"
+                        android:drawableEnd="@drawable/ic_calendar"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_edit_text"
+                        android:padding="@dimen/padding_edit_text"
+                        android:drawablePadding="@dimen/padding_normal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginBottom="@dimen/margin_normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="@color/colorTextReminder"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:text="@string/hour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:id="@+id/txtTime"
+                        android:editable="false"
+                        android:drawableEnd="@drawable/ic_alarm"
+                        android:textAlignment="center"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_edit_text"
+                        android:padding="@dimen/padding_edit_text"
+                        android:drawablePadding="@dimen/padding_normal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:layout_marginTop="@dimen/margin_big"
+            android:id="@+id/btnSave"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:text="@string/save"
+            android:textColor="@color/colorWhite"
+            android:padding="@dimen/padding_big"
+            android:background="@drawable/bg_button_save"
+            android:textSize="@dimen/text_size_medium"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

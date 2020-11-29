@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Doctor.DetailDoctorActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_big"
+        android:background="@color/colorToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_gravity="start"
+            android:src="@drawable/ic_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:tint="@color/colorTabSelected"/>
+        <TextView
+            android:id="@+id/tvToolbar"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Bác sĩ"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorTabSelected"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvDoctor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

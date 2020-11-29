@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main.MainActivity"
+    android:gravity="center"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:src="@drawable/logo"
+        android:layout_width="wrap_content"
+        android:transitionName="logo_image"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvName"
+        android:text="@string/appName"
+        android:textColor="#0E87E8"
+        android:textSize="@dimen/text_size_big"
+        android:layout_width="wrap_content"
+        android:transitionName="logo"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvName2"
+        android:text="Ứng dụng tra cứu thuốc"
+        android:textSize="@dimen/text_size_medium"
+        android:textColor="@color/colorBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
